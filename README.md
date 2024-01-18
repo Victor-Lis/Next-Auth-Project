@@ -61,7 +61,7 @@ https://next-auth.js.org/getting-started/example
 ### Private
 
 #### No User
-![Private](./project-images/Private%20-%20No%20Admin.png)
+![Private](./project-images/Private%20-%20No%20admin.png)
 
 #### Admin User 
 ![Admin](./project-images/Private%20-%20Signed.png)
