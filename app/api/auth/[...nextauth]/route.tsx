@@ -8,11 +8,15 @@ const authOptions: NextAuthOptions = {
     CredentialProvider({
       name: "Credentials",
       credentials: {
+        nome: { type: "nome" },
         email: { label: "Email", type: "email" },
         password: { label: "Password", type: "password" },
+        signup: { type: "boolean" },
       },
       async authorize(credentials) {
-        const user = {
+        console.log(credentials);
+
+        let user = {
           id: "1",
           email: "user@gmail.com",
           password: "@123",
@@ -20,10 +24,24 @@ const authOptions: NextAuthOptions = {
           role: "admin",
         };
 
-        const isValidEmail = user.email === credentials?.email;
-        const isValidPassword = user.password === credentials?.password;
-        if (!isValidEmail || !isValidPassword) return null;
-        return user;
+        if (credentials?.signup === "false") {
+            console.log("login")
+            const isValidEmail = user.email === credentials?.email;
+            const isValidPassword = user.password === credentials?.password;
+            if (!isValidEmail || !isValidPassword) return null;
+            return user;
+        }else{
+            user = {
+                id: `${parseInt(user.id+1)}`,
+                email: credentials?.email || "",
+                password: credentials?.password || "",
+                name: credentials?.nome || "",
+                role: "user",
+            }
+        }
+
+        return user
+
       },
     }),
   ],
@@ -50,8 +68,9 @@ const authOptions: NextAuthOptions = {
     },
   },
   pages: {
-    signIn: '/auth/login'
-  }
+    signIn: "/auth/login",
+    newUser: '/auth/pages'
+  },
 };
 
 const handler = NextAuth(authOptions);
