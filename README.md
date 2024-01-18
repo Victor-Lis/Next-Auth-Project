@@ -4,6 +4,9 @@
 Esse é mais projeto utilizando NextJS. Dessa vez utilizando uma lib muito útil, o Next-Auth. Acredito que uma das grandes utilizades dessa lib é a eficiência e praticidade.
 
 Também utilizei Tailwind mais uma vez, estou dando essa chance para conhecer essa lib. E também investi no TypeScript, que ele sim creio ser muito importante.
+
+Esse projeto é só mais um passo em direção ao aperfeiçoamento em NextJS, ainda é só começo dos projetos.
+
 ## Aprendizados
 
 - Trabalhar com a biblioteca Next-Auth;
