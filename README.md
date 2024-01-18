@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Next-Auth-Project
 
-First, run the development server:
+Esse é mais projeto utilizando NextJS. Dessa vez utilizando uma lib muito útil, o Next-Auth. Acredito que uma das grandes utilizades dessa lib é a eficiência e praticidade.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Também utilizei Tailwind mais uma vez, estou dando essa chance para conhecer essa lib. E também investi no TypeScript, que ele sim creio ser muito importante.
+## Aprendizados
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Trabalhar com a biblioteca Next-Auth;
+- Fazer login utilizando email e senha;
+- Fazer telas personalizadas de login;
+- Criar rotas utilizando Next-Router e Next-Auth.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Uso/Exemplos
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Routes
 
-## Learn More
+As rotas do NextJS são baseadas no React-Router-DOM, porém um pouco mais enrigecidas, por ser um framework, por ser um tanto complicado eu explicar a arquitetura completa das rotas apenas com trechos de código, deixo abaixo o link da documentação:
 
-To learn more about Next.js, take a look at the following resources:
+https://nextjs.org/docs/app/building-your-application/routing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Next-Auth
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Acredito que a explicação da arquitetura do Next-Auth e de seu código seja uma explicação muito extensa para colocar aqui, então igual no caso anterior, deixo a documentação da lib, na qual li para entender melhor:
 
-## Deploy on Vercel
+https://next-auth.js.org/getting-started/example
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Screenshots
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Login
+
+##### Login
+![Login](./project-images/Login.png)
+
+#### Login - Invalid Credentials
+![Login - Invalid Credentials](./project-images/Login%20-%20Invalid%20Credentials.png)
+
+### Cadastro
+![Cadastro](./project-images/Cadastro.png)
+
+
+### Home 
+
+#### Home
+![Home](./project-images/Home.png)
+
+### Public
+
+#### No User
+![Public](./project-images/Public%20-%20No%20signed.png)
+
+#### Commum User 
+![Public Commum User](./project-images/Public%20-%20No%20Admin.png)
+
+#### Admin User 
+![Admin](./project-images/Public%20-%20Signed.png)
+
+#### New Created User
+![New user](./project-images/Public%20-%20Personalized%20User.png)
+
+### Private
+
+#### No User
+![Private](./project-images/Private%20-%20No%20Admin.png)
+
+#### Admin User 
+![Admin](./project-images/Private%20-%20Signed.png)
+
+## Autores
+
+- [@Victor-Lis](https://github.com/Victor-Lis)
+
